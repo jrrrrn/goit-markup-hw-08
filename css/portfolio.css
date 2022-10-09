@@ -570,6 +570,52 @@ body {
   fill: #2196f3;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  min-height: 609px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+}
+.backdrop.is-hidden .modal {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+
+.modal-content {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
