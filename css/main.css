@@ -641,6 +641,30 @@ body {
   color: #ffffff;
 }
 
+.about-us_item .secondary-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.about-us_desc {
+  line-height: 1.74;
+}
+
+.about-us_icon {
+  width: 70px;
+  height: 70px;
+}
+
+.about-us_icon--bg {
+  max-width: 450px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 190px;
+  background-color: #f5f4fa;
+}
+
 .modal_title {
   color: #212121;
   margin-bottom: 30px;
