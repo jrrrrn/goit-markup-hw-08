@@ -1,4 +1,9 @@
-/*# sourceMappingURL=portfolio.css.map */box model (opinionated).
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
 */
 *,
 ::before,
@@ -761,6 +766,105 @@ body {
 
 .subscribe-btn_text {
   margin-right: 10px;
+}
+
+.filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.filters_item:not(:nth-last-child(-n+2)) {
+  margin-bottom: 10px;
+}
+.filters_item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project-card {
+  width: 100%;
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-card:hover {
+  -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.1607843137);
+}
+.project-card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.project-card_link {
+  color: inherit;
+}
+
+.project-title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-card_type {
+  font-size: 16px;
+  line-height: 1.9;
+  color: inherit;
+}
+
+.project-card_desc {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #eee;
+  border-top: transparent;
+}
+
+.project-card_img {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card_content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding-top: 77px;
+  padding-bottom: 77px;
+  padding-right: 24px;
+  padding-left: 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-card:hover .project-card_content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .visually-hidden {

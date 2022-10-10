@@ -1,4 +1,9 @@
-/*# sourceMappingURL=main.css.map */tter box model (opinionated).
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
 */
 *,
 ::before,
@@ -1110,11 +1115,4 @@ body {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-*,
-::before,
-::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }/*# sourceMappingURL=main.css.map */
