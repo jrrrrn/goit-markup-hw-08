@@ -665,6 +665,38 @@ body {
   background-color: #f5f4fa;
 }
 
+@media screen and (max-width: 1139px) {
+  .what-we-do {
+    display: none;
+  }
+}
+
+.what-we-do_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.what-we-do_item {
+  position: relative;
+}
+.what-we-do_item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.what-we-do_desc {
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  width: 370px;
+  padding-top: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+}
+
 .modal_title {
   color: #212121;
   margin-bottom: 30px;
