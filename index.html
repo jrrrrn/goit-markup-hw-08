@@ -24,13 +24,9 @@
           <a href="./index.html" class="logo">
             <span class="web-logo">Web</span>Studio
           </a>
-<button type="button" class="menu-btn">
-<svg width="24" height="16" class="menu-btn_icon">
-  <use href="./images/icons/sprite.svg#icon-name"></use>
-</svg>
-</button>
+
       
-          <div class="menu-container">
+          <div class="menu-container" data-menu>
             <nav class="nav">
           <ul class="nav_list list">
             <li class="nav_item">
@@ -46,29 +42,41 @@
             </li>
           </ul>
         </nav>
-
+<div class="header-contacts">
         <address class="header-address">
-          <a
-            href="mailto:info@devstudio.com"
-            class="link header-address_link"
-            ><svg class="header-address_icon" width="20" height="16">
+          <a href="mailto:info@devstudio.com" class="link header-address_link header-address_email"><svg
+              class="header-address_icon" width="20" height="16">
               <use href="./images/icons/sprite.svg#icon-mail"></use>
             </svg>
-            info@devstudio.com</a
-          >
-
-          <a
+            info@devstudio.com</a>
+           <a
             href="tel:+380961111111"
-            class="link header-address_link"
+            class="link header-address_link header-address_phone-number"
           >
             <svg class="header-address_icon" width="16" height="16">
               <use href="./images/icons/sprite.svg#icon-phone"></use>
             </svg>
             +38 096 111 11 11</a
           >
-        </address>
-      </div>
+
+          
+</address>
+<ul class="menu-container-socials">
+<li class="menu-container-socials_item"><a href="#Instagram"  class="menu-container-socials_link">Instagram</a></li>
+<li class="menu-container-socials_item"><a href="#Twitter" class="menu-container-socials_link">Twitter</a></li>
+<li class="menu-container-socials_item"><a href="#Facebook" class="menu-container-socials_link">Facebook</a></li>
+<li class="menu-container-socials_item"><a href="#LinkedIn" class="menu-container-socials_link">LinkedIn</a></li>
+</ul>
       
+ </div>   
+</div>
+
+<button type="button" class="menu-btn" aria-expanded="false" data-menu-button>
+  <svg width="24" height="16" class="menu-btn_icon" aria-label="Mobile menu switch">
+    <use class="menu-icon" href="./images/icons/sprite.svg#icon-menu"></use>
+    <use class="close-menu-icon" href="./images/icons/sprite.svg#icon-menu-close"></use>
+  </svg>
+</button>
       
 
 </div>
@@ -661,7 +669,7 @@
         </div>
       </div>
     </div>
-
+<script src="./mobile-menu.js"></script>
     <script src="./modal.js"></script>
     <!-- js speaker form -->
     <script>
