@@ -302,13 +302,12 @@ body {
 }
 
 .container {
-  max-width: 1170px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 480px;
   }
@@ -566,6 +565,12 @@ body {
   padding-bottom: 40px;
 }
 
+@media screen and (min-width: 1600px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 .socials_item {
   width: 44px;
   height: 44px;
@@ -583,6 +588,7 @@ body {
 }
 
 .header {
+  max-width: 1600px;
   margin: 0 auto;
   font-weight: 500;
   letter-spacing: 0.02em;
