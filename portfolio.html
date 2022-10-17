@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
 </head>
+<body>
   <header class="header">
     <div class="container">
   
@@ -24,17 +25,17 @@
   
       <div class="menu-container" data-menu>
         <nav class="nav">
-          <ul class="nav_list list">
+          <ul class="nav_list">
             <li class="nav_item">
-              <a href="./index.html" class="nav_link link ">
-                Студия
+              <a href="./index.html" class="nav_link ">
+                Studio
               </a>
             </li>
             <li class="nav_item">
-              <a href="./portfolio.html" class="nav_link link portfolio-current"> Портфолио </a>
+              <a href="./portfolio.html" class="nav_link portfolio-current"> Portfolio </a>
             </li>
             <li class="nav_item">
-              <a href="" class="nav_link link "> Контакты </a>
+              <a href="" class="nav_link "> Contacts </a>
             </li>
           </ul>
         </nav>
@@ -69,7 +70,7 @@
   
       <button class="menu-btn" aria-expanded="false" aria-expanded="false" aria-controls="menu-container"
         data-menu-button>
-        <svg width="24" height="16" class="menu-btn_icon" aria-label="Mobile menu switch">
+        <svg width="18.67" height="18.67" class="menu-btn_icon" aria-label="Mobile menu switch">
           <use class="menu-icon" href="./images/icons/sprite.svg#icon-menu"></use>
           <use class="close-menu-icon" href="./images/icons/sprite.svg#icon-menu-close"></use>
         </svg>
@@ -82,128 +83,183 @@
       <main>
         <section class="portfolio">
           <div class="container">
-            <h1 class="visually-hidden"> Наши проекти </h1>
+            <h1 class="visually-hidden"> Our projects </h1>
             <!--Projects navigation-->
             <div class=" filters">
 
-        <div class="filters_item"><label class="filter-btn current-btn"><input type="radio" class=" visually-hidden" name="filters" value="all"> Все </label></div>
-<div class="filters_item"><label class="filter-btn"><input type="radio" class=" visually-hidden" name="filters" value="web-sites">Веб-сайты</label></div>
-<div class="filters_item"><label class="filter-btn"><input type="radio" class=" visually-hidden" name="filters" value="apps"> Приложения</label></div>
-<div class="filters_item"><label class="filter-btn"><input type="radio" class=" visually-hidden" name="filters" value="design">Дизайн</label></div>
-<div class="filters_item"><label class="filter-btn"><input type="radio" class=" visually-hidden" name="filters" value="marketing"> Маркетинг</label></div>
+        <div class="filters_item"><label class="filter-btn current-btn"><input type="radio" class=" visually-hidden" name="filters" value="all"> All </label></div>
+<div class="filters_item"><label class="filter-btn"><input type="radio" class=" visually-hidden" name="filters" value="web-sites">Web-sites</label></div>
+<div class="filters_item"><label class="filter-btn"><input type="radio" class=" visually-hidden" name="filters" value="apps"> Apps</label></div>
+<div class="filters_item"><label class="filter-btn"><input type="radio" class=" visually-hidden" name="filters" value="design">Design</label></div>
+<div class="filters_item"><label class="filter-btn"><input type="radio" class=" visually-hidden" name="filters" value="marketing"> Marketing</label></div>
 
           </div>
             <!--Projects-->
             <ul class="list projects">
 
 <li class="project-card">
-  <a href="#1" class="project-card_link link">
+  <a href="#1" class="project-card_link ">
     <div class="project-card_img">
-    <img  src="./images/portfolio/technokryak-1.jpg" alt="Ноутбук" width="370"
-  height="294"/>
-  <p class="project-card_content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-  исчерпывающие сведения о компании или частном лице.</p>
+
+  <picture>
+    <source srcset="./images/portfolio/desktop/project-1.jpg, ./images/portfolio/desktop/project-1-2x.jpg 2x"
+      media="(min-width: 1200px)">
+      <source srcset="./images/portfolio/tablet/project-1.jpg, ./images/portfolio/tablet/project-1-2x.jpg 2x"
+        media="(min-width: 768px)">
+    <source
+    srcset="./images/portfolio/mobile/project-1.jpg,  ./images/portfolio/mobile/project-1-2x.jpg 2x"
+    media="(max-width: 767px)">
+    <img src="./images/portfolio/tablet/project-1.jpg" alt="Laptop">
+  </picture>
+  <p class="project-card_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor molestiae ducimus vitae nihil quis impedit, corporis consequuntur soluta nostrum rerum!</p>
   </div>
 
-     <div class="project-card_desc"><h2 class="project-title secondary-title"> Технокряк </h2>
-         <p class="project-card_type"> Веб-сайт</p></div></a>
+     <div class="project-card_desc"><h2 class="project-title secondary-title"> Code Honors </h2>
+         <p class="project-card_type"> Web-site</p></div></a>
       </li>
 
 <li class="project-card">
-  <a href="#2" class="project-card_link link">
+  <a href="#2" class="project-card_link">
     <div class="project-card_img">
-    <img  class="project-card_img" src="./images/portfolio/poster-2.jpg" alt="Два человека играют в баскетбол " width="370"
-  height="294"/>
-<p class="project-card_content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-  исчерпывающие сведения о компании или частном лице.</p>
+    <picture>
+      <source srcset="./images/portfolio/desktop/project-2.jpg, ./images/portfolio/desktop/project-2-2x.jpg 2x"
+        media="(min-width: 1200px)">
+      <source srcset="./images/portfolio/tablet/project-2.jpg, ./images/portfolio/tablet/project-2-2x.jpg 2x"
+        media="(min-width: 768px)">
+      <source srcset="./images/portfolio/mobile/project-2.jpg,  ./images/portfolio/mobile/project-2-2x.jpg 2x"
+        media="(max-width: 767px)">
+      <img src="./images/portfolio/tablet/project-2.jpg" alt="Two men playing basketball">
+    </picture>
+<p class="project-card_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vero minus molestiae modi, aliquid ratione repellendus voluptates sunt facere ea!</p>
 </div>
-      <div class="project-card_desc"><h2 class="project-title secondary-title">Постер <span lang="en"> New Orlean vs Golden Star</span></h2>
-        <p class="project-card_type">Дизайн </p></div></a>
+      <div class="project-card_desc"><h2 class="project-title secondary-title">Poster New Orlean vs Golden Star</h2>
+        <p class="project-card_type">Design </p></div></a>
       </li>
 
 <li class="project-card">
-  <a href="#3" class="project-card_link link">
+  <a href="#3" class="project-card_link ">
     <div class="project-card_img">
-    <img class="project-card_img" src="./images/portfolio/seafood-3.jpg" alt="Лого ресторана" width="370"
-  height="294"/>
-<p class="project-card_content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-  исчерпывающие сведения о компании или частном лице.</p></div>
-      <div class="project-card_desc"><h2 class="project-title secondary-title">Ресторан <span lang="en">Seafood</span></h2>
-        <p class="project-card_type">Приложение </p></div></a>
+    <picture>
+      <source srcset="./images/portfolio/desktop/project-3.jpg, ./images/portfolio/desktop/project-3-2x.jpg 2x"
+        media="(min-width: 1200px)">
+      <source srcset="./images/portfolio/tablet/project-3.jpg, ./images/portfolio/tablet/project-3-2x.jpg 2x"
+        media="(min-width: 768px)">
+      <source srcset="./images/portfolio/mobile/project-3.jpg,  ./images/portfolio/mobile/project-3-2x.jpg 2x"
+        media="(max-width: 767px)">
+      <img src="./images/portfolio/tablet/project-3.jpg" alt="Restaurant logo">
+    </picture>
+<p class="project-card_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae maxime voluptas adipisci hic quaerat explicabo, libero veniam reiciendis eligendi? Ullam?</p></div>
+      <div class="project-card_desc"><h2 class="project-title secondary-title">Restaurant Seafood</h2>
+        <p class="project-card_type">App </p></div></a>
       </li>
 
 <li class="project-card">
-  <a href="#4" class="project-card_link link">
+  <a href="#4" class="project-card_link ">
     <div class="project-card_img">
-    <img  class="project-card_img" src="./images/portfolio/prime-4.jpg" alt="Наушники" width="370"
-  height="294">
-<p class="project-card_content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-  исчерпывающие сведения о компании или частном лице.</p>
+    <picture>
+      <source srcset="./images/portfolio/desktop/project-4.jpg, ./images/portfolio/desktop/project-4-2x.jpg 2x"
+        media="(min-width: 1200px)">
+      <source srcset="./images/portfolio/tablet/project-4.jpg, ./images/portfolio/tablet/project-4-2x.jpg 2x"
+        media="(min-width: 768px)">
+      <source srcset="./images/portfolio/mobile/project-4.jpg, , ./images/portfolio/mobile/project-4-2x.jpg 2x"
+        media="(max-width: 767px)">
+      <img src="./images/portfolio/tablet/project-4.jpg" alt="Headphones">
+    </picture>
+<p class="project-card_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum libero ipsa ipsum eveniet non quia natus nostrum ipsam dolores numquam..</p>
 </div>
-      <div class="project-card_desc"><h2 class="project-title secondary-title">Проект <span lang="en">Prime</span></h2>
-         <p class="project-card_type">Маркетинг </p></div></a>
+      <div class="project-card_desc"><h2 class="project-title secondary-title">Project <span lang="en">Prime</span></h2>
+         <p class="project-card_type">Marketing </p></div></a>
         </li>
 
 <li class="project-card">
-  <a href="#5" class="project-card_link link">
+  <a href="#5" class="project-card_link">
     <div class="project-card_img">
-    <img class="project-card_img" src="./images/portfolio/boxes-5.jpg" alt="Белая и коричневая коробки" width="370"
-  height="294">
-<p class="project-card_content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
-  это позволит посетителю получить
-  исчерпывающие сведения о компании или частном лице.</p>
+    <picture>
+      <source srcset="./images/portfolio/desktop/project-5.jpg, ./images/portfolio/desktop/project-5-2x.jpg 2x"
+        media="(min-width: 1200px)">
+      <source srcset="./images/portfolio/tablet/project-5.jpg, ./images/portfolio/tablet/project-5-2x.jpg 2x"
+        media="(min-width: 768px)">
+      <source srcset="./images/portfolio/mobile/project-5.jpg,  ./images/portfolio/mobile/project-5-2x.jpg 2x"
+        media="(max-width: 767px)">
+      <img src="./images/portfolio/tablet/project-5.jpg" alt="A big box and a small box">
+    </picture>
+<p class="project-card_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo autem officiis debitis alias in ducimus voluptate iusto quidem magnam possimus.</p>
 </div>
-      <div class="project-card_desc"><h2 class="project-title secondary-title" >Проект <span lang="en">Boxes</span></h2>
-         <p class="project-card_type">Приложение </p></div></a>
+      <div class="project-card_desc"><h2 class="project-title secondary-title" >Project Boxes</h2>
+         <p class="project-card_type">App </p></div></a>
         </li>
 
 <li class="project-card">
-  <a href="#6" class="project-card_link link">
+  <a href="#6" class="project-card_link ">
     <div class="project-card_img">
-    <img class="project-card_img" src="./images/portfolio/ihnb-6.jpg" alt="Екран компьютера" width="370"
-  height="294">
-<p class="project-card_content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-  исчерпывающие сведения о компании или частном лице.</p>
+    <picture>
+      <source srcset="./images/portfolio/desktop/project-6.jpg, ./images/portfolio/desktop/project-6-2x.jpg 2x"
+        media="(min-width: 1200px)">
+      <source srcset="./images/portfolio/tablet/project-6.jpg, ./images/portfolio/tablet/project-6-2x.jpg 2x"
+        media="(min-width: 768px)">
+      <source srcset="./images/portfolio/mobile/project-6.jpg, , ./images/portfolio/mobile/project-6-2x.jpg 2x"
+        media="(max-width: 767px)">
+      <img src="./images/portfolio/tablet/project-6.jpg" alt="A computer monitor">
+    </picture>
+<p class="project-card_content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laudantium tempore neque quia esse amet? Neque, facilis! Nulla, facere pariatur.</p>
 </div>
-       <div class="project-card_desc"><h2 class="project-title secondary-title"><span lang="en">Inspiration has no Borders</span></h2>
-          <p class="project-card_type">Веб-сайт </p></div></a>
+       <div class="project-card_desc"><h2 class="project-title secondary-title">Inspiration has no Borders</h2>
+          <p class="project-card_type"> Web-site </p></div></a>
         </li>
 
 <li class="project-card">
-  <a href="#7" class="project-card_link link">
+  <a href="#7" class="project-card_link">
     <div class="project-card_img">
-    <img class="project-card_img" src="./images/portfolio/lim-edition-7.jpg" alt="Журнал" width="370"
-  height="294">
-<p class="project-card_content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-  исчерпывающие сведения о компании или частном лице.</p>
+    <picture>
+      <source srcset="./images/portfolio/desktop/project-7.jpg, ./images/portfolio/desktop/project-7-2x.jpg 2x"
+        media="(min-width: 1200px)">
+      <source srcset="./images/portfolio/tablet/project-7.jpg, ./images/portfolio/tablet/project-7-2x.jpg 2x"
+        media="(min-width: 768px)">
+      <source srcset="./images/portfolio/mobile/project-7.jpg, , ./images/portfolio/mobile/project-7-2x.jpg 2x"
+        media="(max-width: 767px)">
+      <img src="./images/portfolio/tablet/project-7.jpg" alt="Magazine">
+    </picture>
+<p class="project-card_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequatur aperiam quae quisquam tempora voluptate deleniti incidunt ducimus porro assumenda?</p>
 </div>
-       <div class="project-card_desc"><h2 class="project-title  secondary-title">Издание <span lang="en">Limited Edition</span></h2>
-          <p class="project-card_type">Дизайн </p></div></a>
+       <div class="project-card_desc"><h2 class="project-title  secondary-title">Magazine Limited Edition</h2>
+          <p class="project-card_type">Design </p></div></a>
         </li>
 
 <li class="project-card">
-  <a href="#8" class="project-card_link link">
+  <a href="#8" class="project-card_link ">
     <div class="project-card_img">
-    <img class="project-card_img" src="./images/portfolio/lab-8.jpg" alt="Бирка" width="370"
-  height="294">
-<p class="project-card_content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-  исчерпывающие сведения о компании или частном лице.</p>
+    <picture>
+      <source srcset="./images/portfolio/desktop/project-8.jpg, ./images/portfolio/desktop/project-8-2x.jpg 2x"
+        media="(min-width: 1200px)">
+      <source srcset="./images/portfolio/tablet/project-8.jpg, ./images/portfolio/tablet/project-8-2x.jpg 2x"
+        media="(min-width: 768px)">
+      <source srcset="./images/portfolio/mobile/project-8.jpg,  ./images/portfolio/mobile/project-8-2x.jpg 2x"
+        media="(max-width: 767px)">
+      <img src="./images/portfolio/tablet/project-8.jpg" alt="A tag">
+    </picture>
+<p class="project-card_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quas suscipit expedita sed eveniet debitis doloremque, voluptatem alias officiis molestias?</p>
 </div>
-      <div class="project-card_desc"><h2 class="project-title secondary-title">Проект <span lang="en">LAB</span></h2>
-          <p class="project-card_type">Маркетинг </p></div></a>
+      <div class="project-card_desc"><h2 class="project-title secondary-title">Project LAB</h2>
+          <p class="project-card_type">Marketing </p></div></a>
         </li>
 
 <li class="project-card">
-  <a href="#9" class="project-card_link link">
+  <a href="#9" class="project-card_link">
     <div class="project-card_img">
-    <img class="project-card_img" src="./images/portfolio/gr-business-9.jpg" alt="Человек печатает на ноутбуке" width="370"
-  height="294">
-<p class="project-card_content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-  исчерпывающие сведения о компании или частном лице.</p>
+    <picture>
+      <source srcset="./images/portfolio/desktop/project-9.jpg, ./images/portfolio/desktop/project-9-2x.jpg 2x"
+        media="(min-width: 1200px)">
+      <source srcset="./images/portfolio/tablet/project-9.jpg, ./images/portfolio/tablet/project-9-2x.jpg 2x"
+        media="(min-width: 768px)">
+      <source srcset="./images/portfolio/mobile/project-9.jpg, , ./images/portfolio/mobile/project-9-2x.jpg 2x"
+        media="(max-width: 767px)">
+      <img src="./images/portfolio/tablet/project-9.jpg" alt="A man typing on a laptop">
+    </picture>
+<p class="project-card_content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quo perferendis eum animi iste porro ratione alias recusandae dolore sint?</p>
 </div>
      <div class="project-card_desc">
       <h2 class="project-title secondary-title"><span lang="en">Growing Business</span></h2>
-       <p class="project-card_type">Приложение </p></div></a>
+       <p class="project-card_type">App</p></div></a>
 
 </li>
             </ul>
@@ -218,20 +274,21 @@
         <div class="container">
           <div class="footer-wrapper">
             <div class="footer-address-column">
-              <a href="./index.html" lang="en" class="logo"><span class="web-logo">Web</span>Studio
+              <a href="./index.html" class="logo"><span class="web-logo">Web</span>Studio
               </a>
       
               <address class="footer-address_list">
-                <a href="https://goo.gl/maps/rHKqKepESViR6Uj78" class=" footer-address_link phys-address link">
-                  г. Киев, пр-т Леси Украинки, 26</a>
-                <a href="mailto:info@devstudio.com" class=" footer-address_link link">info@devstudio.com</a>
-                <a href="tel:+380961111111" class=" footer-address_link link">
+                <a href="https://goo.gl/maps/TCCVCwGyVJFu1nXZ7" class=" footer-address_link ">
+                  74 Drive Hill
+                  Poughkeepsie, NY 1260</a>
+                <a href="mailto:info@devstudio.com" class=" footer-address_link">info@devstudio.com</a>
+                <a href="tel:+380961111111" class=" footer-address_link">
                   +38 096 111 11 11</a>
               </address>
             </div>
             <div class="join-column">
-              <h3 class="footer-column_title">присоединяйтесь</h3>
-              <ul class="footer-socials_list list">
+              <h3 class="footer-column_title">join</h3>
+              <ul class="footer-socials_list">
                 <li class="footer-socials_item socials_item">
                   <a class="link" href="#instagram" aria-label="Instagram">
       
@@ -266,11 +323,11 @@
             </div>
           </div>
           <div class="subscribe-column">
-            <h3 class="footer-column_title">Подпишитесь на рассылку</h3>
+            <h3 class="footer-column_title">Subscribe to a newsletter</h3>
             <form class="subscribe-column_form" name="subscribe-column_form" autocomplete="on">
               <input type="email" name="e-mail" class="subscribe-column_input" placeholder="E-mail" />
               <button type="submit" class="subscribe-btn">
-                <span class="subscribe-btn_text"> Подписаться </span>
+                <span class="subscribe-btn_text"> Subscribe </span>
                 <svg class="subscribe-btn_icon" width="24" height="24">
                   <use href="./images/icons/sprite.svg#icon-send"></use>
                 </svg>
@@ -279,6 +336,7 @@
           </div>
         </div>
       </footer>
+      <script src="./mobile-menu.js"></script>
 </body>
 </html>
 
