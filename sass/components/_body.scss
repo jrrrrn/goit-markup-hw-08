@@ -1,0 +1,15 @@
+@use "../utils/variables" as v;
+body {
+    
+    background-color: #fff;
+
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    color: v.$primary-text-color;
+}

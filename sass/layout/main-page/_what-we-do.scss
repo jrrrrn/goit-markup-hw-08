@@ -1,0 +1,32 @@
+@use "../../utils/variables" as v;
+.what-we-do {
+    @media screen and (max-width:1200px) {
+        display: none;
+        
+    }
+}
+.what-we-do_list {
+    display: flex;
+}
+
+
+.what-we-do_item {
+    position: relative;
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
+        width: 370px;
+height: 294px;
+}
+
+.what-we-do_desc {
+    position: absolute;
+    bottom: 0px;
+    height: 70px;
+    width: 370px;
+    padding-top: 27px;
+    background-color: rgba(47, 48, 58, .8);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;}

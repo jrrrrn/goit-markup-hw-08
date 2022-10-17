@@ -1,0 +1,123 @@
+
+@use "../../utils/variables" as v;
+
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-card {
+
+    max-width: 450px;
+    transition: box-shadow 250ms v.$animation-timing-function;
+
+    &:hover {
+        box-shadow: 1px 4px 6px 0px #00000029;
+    }
+
+   
+}
+
+.project-card_link {
+    color: inherit;
+}
+
+.project-title {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project-card_type {
+    font-size: 16px;
+    line-height: 1.9;
+    color: inherit;
+}
+
+.project-card_desc {
+    padding-left: 24px;
+    padding-right: 23px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    border: 1px solid #eee;
+    border-top: transparent;
+}
+
+.project-card_img {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.project-card_content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    padding-right: 22px;
+    padding-left: 22px;
+
+    background-color: rgba(33, 150, 243, 0.9);
+
+    font-size: 18px;
+    line-height: 28px;
+    color: v.$secondary-text-color;
+
+    transform: translateY(101%);
+    transition: transform 250ms v.$animation-timing-function;
+
+    .project-card:hover & {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width:767px) {
+    .project-card:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width:1199px) {
+    .project-card {
+        width: calc((100% - 60px)/2);
+
+        &:first-child .project-card_desc {
+            padding-bottom: 56px;
+
+        }
+        &:nth-child(-2n+9) {
+            margin-right: 30px;
+        }
+        &:not(:nth-child(n+8)) {
+            margin-bottom: 30px;
+        }
+
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    .project-card {
+            width: calc((100% - 60px)/3);
+    
+
+    
+            &:not(:nth-child(3n)) {
+                margin-right: 30px;
+            }
+    
+            &:nth-child(-n+6) {
+                margin-bottom: 30px;
+            }
+
+    }}

@@ -1,0 +1,67 @@
+@use "../utils/variables" as v;
+@use "../utils/placeholders";
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition: opacity 200ms v.$animation-timing-function;
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.modal {
+    z-index: 6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+   width: 450px;
+
+    min-height: 609px;
+
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px #00000033;
+    background-color: #ffffff;
+
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms v.$animation-timing-function 200ms,
+        opacity 250ms v.$animation-timing-function 200ms;
+
+    .backdrop.is-hidden & {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+}
+
+.modal-content {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+@media screen and (max-width: 479px) {
+    .modal {
+
+        width: calc(100% - 30px);
+    }
+    
+}
+@media screen and (min-width:1200px) {
+    .modal {
+        width: 528px;
+        height: 581px;
+    }
+    
+}
+

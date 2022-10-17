@@ -1,0 +1,5 @@
+@use "../utils/variables" as v;
+.secondary-title {
+    font-weight: 700;
+    color: v.$title-text-color;
+}

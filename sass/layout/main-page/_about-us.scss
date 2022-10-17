@@ -1,0 +1,74 @@
+@use "../../utils/variables" as v;
+
+
+.about-us_item .secondary-title {
+    color: v.$title-text-color;
+    
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+
+.about-us_desc {
+   line-height: 1.74;
+}
+
+.about-us_icon {
+    width: 70px;
+    height: 70px;
+}
+
+.about-us_icon--bg {
+   display: flex;
+   justify-content: center;
+    
+
+    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+ 
+
+    background-color: #f5f4fa;
+}
+@media screen and (max-width: 767px) {
+    
+    .about-us_item {
+        
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    .secondary-title {
+text-align: center;
+    }}
+    
+}
+@media  screen and (min-width:768px) {
+.about-us_list{ 
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-us_item {
+    width: calc((100% - 30px)/2);
+    &:nth-child(odd){
+        margin-right: 30px;
+    }
+    &:nth-child(-n+2) {
+        margin-bottom: 30px;
+    }
+}
+    
+}
+@media screen and (min-width: 1200px) {
+    .about-us_list {
+        flex-wrap: nowrap;
+    }
+    .about-us_item {
+width: calc((100% - 30px)/4);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }}
+}

@@ -1,0 +1,134 @@
+@use "../../utils/variables" as v;
+@use "../../utils/placeholders";
+
+.modal_title {
+  color: #212121;
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.user-data_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-data_form-field {
+  position: relative;
+}
+
+.user-data_input {
+  width: 100%;
+  height: 40px;
+
+  padding-left: 40px;
+  padding-right: 20px;
+
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  color: v.$primary-text-color;
+
+  margin-bottom: 28px;
+  &:focus {
+    outline: 1px solid v.$accent-color;
+  }
+}
+
+.user-data_icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  fill: #212121;
+  transition: fill 250ms v.$animation-timing-function;
+  .user-data_input:focus ~ & {
+    fill: v.$accent-color;
+  }
+}
+
+.user-data_label {
+  position: absolute;
+  top: 0px;
+  left: 42px;
+
+  transform: translateY(35%);
+
+  transition: transform 250ms v.$animation-timing-function,
+    color 250ms v.$animation-timing-function;
+  .user-data_input:focus + & {
+    transform: translate(-42px, -100%);
+    color: v.$accent-color;
+  }
+  .user-data_input:not(:placeholder-shown) + & {
+    transform: translate(-42px, -100%);
+  }
+}
+
+.user-data_textarea {
+  width: 100%;
+  height: 120px;
+
+  margin-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  color: v.$primary-text-color;
+
+  resize: none;
+  &:focus {
+    outline: 1px solid v.$accent-color;
+  }
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.user-data_textarea-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translateY(-100%);
+  transition: color 250ms v.$animation-timing-function;
+  .user-data_textarea:focus + & {
+    color: v.$accent-color;
+  }
+}
+
+.user-data-policy {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  font-size: 12px;
+}
+
+.user-data-policy_link {
+  color: v.$accent-color;
+  text-decoration: underline;
+}
+
+.policy-checkbox {
+  @extend %flex-centered;
+  width: 16px;
+  height: 15px;
+
+  margin-right: 7px;
+
+  border: 2px solid #272727;
+  border-radius: 2px;
+
+  transition: background-color 250ms v.$animation-timing-function,
+    border 250ms v.$animation-timing-function;
+  .user-data-policy_checkbox:checked + & {
+    background-color: v.$accent-color;
+    border: transparent;
+  }
+}
+.policy-checkbox_icon-check {
+  fill: #fff;
+}

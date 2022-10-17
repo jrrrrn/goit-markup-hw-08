@@ -1,0 +1,150 @@
+@use "../utils/placeholders";
+@use "../utils/variables" as v;
+.menu-btn {
+    width: 40px;
+    height: 40px;
+background-color: transparent;
+border: transparent;
+
+    cursor: pointer;
+ transition: fill 250ms v.$animation-timing-function;
+    &:hover, &:focus .menu-btn_icon{
+        fill: v.$accent-color;
+        display: flex;
+    align-items: center
+    }
+}
+.modal-button {
+    @extend %btn;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    background-color: v.$accent-color;
+    color: v.$secondary-text-color;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: inherit;
+    font-weight: 700;
+
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+
+    box-shadow: 0px 4px 4px 0px #00000026;
+
+    transition: background-color 250ms v.$animation-timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: v.$btn-hover;
+    }
+}
+.subscribe-btn {
+    @extend %flex-centered ;
+    @extend %btn;
+
+    width: 200px;
+    height: 50px;
+
+    background-color: v.$accent-color;
+    box-shadow: 0px 4px 4px 0px #00000026;
+
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: v.$secondary-text-color;
+    transition: background-color 250ms v.$animation-timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: v.$btn-hover;
+    }
+    margin-right: auto;
+    margin-left: auto;
+}
+.send-btn {
+    @extend %btn;
+    width: 200px;
+    height: 50px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    background-color: v.$accent-color;
+    box-shadow: 0px 4px 4px 0px #00000026;
+
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: v.$secondary-text-color;
+
+
+    &:hover,
+    &:focus {
+        background-color: v.$btn-hover;
+    }
+}
+
+.filter-btn {
+    @extend %btn;
+    
+    padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 22px;
+        padding-right: 22px;
+        font-weight: 500;
+
+        color: #000;
+        background-color: #f0f0f0;
+    
+        line-height: 1.62;
+        transition: background-color 250ms v.$animation-timing-function,
+            color 250ms v.$animation-timing-function,
+            box-shadow 250ms v.$animation-timing-function;
+    
+        &:hover,
+        &:focus {
+            background-color: v.$accent-color;
+            color: v.$secondary-text-color;
+            box-shadow: 0px 2px 2px 0px #0000001f;
+        }
+        
+}
+.current-btn {
+    background-color: v.$accent-color;
+    color: v.$secondary-text-color;
+}
+
+.close-button_position {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-button {
+    @extend %flex-centered;
+    width: 30px;
+    height: 30px;
+
+    margin-top: 8px;
+    margin-right: 8px;
+
+    border: 1px solid #0000001a;
+    border-radius: 50%;
+    background-color: transparent;
+
+    transition: background-color 250ms v.$animation-timing-function;
+
+    cursor: pointer;
+}
+
+.close-button_icon {
+    fill: #000000;
+    transition: fill 250ms v.$animation-timing-function;
+
+    .close-button:hover &,
+    .close-button:focus & {
+        fill: v.$accent-color;
+    }
+}

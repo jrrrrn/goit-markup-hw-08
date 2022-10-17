@@ -773,12 +773,6 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .header-contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-self: flex-end;
-  }
   .nav_list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -807,10 +801,10 @@ body {
     background-repeat: no-repeat;
   }
   .studio-current::after {
-    background-image: url(../../images/icons/underline-1.svg);
+    background-image: url(../images/icons/underline-1.svg);
   }
   .portfolio-current::after {
-    background-image: url(../../images/icons/underline-2.svg);
+    background-image: url(../images/icons/underline-2.svg);
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -874,7 +868,6 @@ body {
 }
 
 .join-column {
-  margin-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -885,6 +878,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 60px;
 }
 
 .footer-socials_list {
@@ -904,11 +898,11 @@ body {
 .subscribe-column_input {
   width: calc(100% - 32px);
   margin-bottom: 20px;
-  background-color: transparent;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
   padding-right: 16px;
+  background-color: transparent;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 16px;
