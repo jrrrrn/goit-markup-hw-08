@@ -625,7 +625,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    max-width: 767px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/index/hero-tablet.jpg");
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/hero-tablet.jpg");
     background-size: 768px 400px;
@@ -1152,7 +1152,6 @@ body {
     right: 15px;
   }
   .menu-container {
-    background-color: rgb(206, 123, 123);
     position: absolute;
     z-index: 3;
     top: 0;
@@ -1264,6 +1263,11 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-preferred-size: 518px;
+        flex-basis: 518px;
   }
   .nav_list {
     display: -webkit-box;
@@ -1276,10 +1280,6 @@ body {
   .nav_link {
     position: relative;
     padding: 32px 0;
-  }
-  .header-address {
-    -webkit-transform: translateX(55%);
-            transform: translateX(55%);
   }
   .studio-current::after,
 .portfolio-current::after {
@@ -1305,12 +1305,14 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
+  .menu-container {
+    -ms-flex-preferred-size: 934px;
+        flex-basis: 934px;
+  }
   .header-address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-transform: translateX(85%);
-            transform: translateX(85%);
   }
   .header-address_link:not(:last-child) {
     margin-right: 50px;

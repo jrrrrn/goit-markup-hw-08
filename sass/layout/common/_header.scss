@@ -58,7 +58,7 @@
   }
 
   .menu-container {
-    background-color: rgb(206, 123, 123);
+  
     position: absolute;
     z-index: 3;
 
@@ -165,6 +165,8 @@
   .menu-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-basis: 518px;
   }
 
   .nav_list {
@@ -178,9 +180,7 @@
     position: relative;
     padding: 32px 0;
   }
-  .header-address {
-    transform: translateX(55%);
-  }
+  
   .studio-current::after,
   .portfolio-current::after {
     content: "";
@@ -211,9 +211,12 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .menu-container {
+      flex-basis: 934px;
+    }
   .header-address {
     display: flex;
-    transform: translateX(85%);
+   
   }
 
   .header-address_link:not(:last-child) {
@@ -224,4 +227,5 @@
     padding-top: 29px;
     padding-bottom: 29px;
   }
+  
 }
