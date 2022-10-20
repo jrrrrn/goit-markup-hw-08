@@ -204,7 +204,7 @@
     background-image: url(../images/icons/underline-2.svg);
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-address_link:not(:last-child) {
     margin-bottom: 10px;
   }
